@@ -70,11 +70,9 @@ An advanced autonomous navigation and control architecture engineered for the Gu
 
 ## 📸 Sample Output
 
-*(Add a screenshot of the dual-panel state/telemetry figure here — this is the single best way to show what the project actually does at a glance.)*
+The dual-panel figure below is generated automatically by `run_MAIN.m`: active robot state (top) and synchronized ultrasonic sensor distances (bottom) over the simulation window.
 
-```markdown
 ![Simulation Output](docs/sample_output.png)
-```
 
 ---
 
@@ -88,4 +86,3 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 **Mohamed Nabil Ali Abd Elaziz Soliman**
 Mechatronics and Robotics Engineering Program, Ain Shams University
-[GitHub: @M0h7amed](https://github.com/M0h7amed)
