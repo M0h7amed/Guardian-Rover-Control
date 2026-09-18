@@ -68,6 +68,14 @@ An advanced autonomous navigation and control architecture engineered for the Gu
 
 ---
 
+## 📑 Full Project Report
+
+A detailed write-up covering the sensor processing architecture, decision logic, emergency override protocol, command routing, diagnostic logging, and data logging format trade-offs (Array vs. Structure vs. Timeseries) is available here:
+
+📄 [Guardian Rover — Full Technical Report (PDF)](docs/Guardian_Rover_Report.pdf)
+
+---
+
 ## 📸 Sample Output
 
 The dual-panel figure below is generated automatically by `run_MAIN.m`: active robot state (top) and synchronized ultrasonic sensor distances (bottom) over the simulation window.
@@ -86,3 +94,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 **Mohamed Nabil Ali Abd Elaziz Soliman**
 Mechatronics and Robotics Engineering Program, Ain Shams University
+[GitHub: @M0h7amed](https://github.com/M0h7amed)
