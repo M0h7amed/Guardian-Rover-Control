@@ -1,5 +1,9 @@
 # Guardian Rover: Autonomous Control System
 
+[![MATLAB](https://img.shields.io/badge/MATLAB-R2021b%2B-orange?logo=mathworks)](https://www.mathworks.com/)
+[![Simulink](https://img.shields.io/badge/Simulink-Required-blue)](https://www.mathworks.com/products/simulink.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 An advanced autonomous navigation and control architecture engineered for the Guardian Rover using **MATLAB** and **Simulink**.
 
 ---
@@ -25,3 +29,63 @@ An advanced autonomous navigation and control architecture engineered for the Gu
 ├── SensorDataBus.m        # Programmatic definition for sensor data bus objects
 ├── LICENSE                # MIT License
 └── README.md              # Project documentation
+```
+
+---
+
+## ⚙️ Prerequisites
+
+* MATLAB R2021b or later *(update to match what you actually developed on)*
+* Simulink
+* No additional toolboxes required beyond base MATLAB/Simulink *(add Stateflow, Control System Toolbox, etc. here if your model uses them)*
+
+---
+
+## 🚀 How to Run
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/M0h7amed/Guardian-Rover-Control.git
+   ```
+2. Open MATLAB and set your current working directory to this repository folder.
+3. Open and run the master script in your Command Window:
+   ```matlab
+   run_MAIN.m
+   ```
+4. **What happens automatically:**
+   * Loads required Bus object definitions into the base workspace.
+   * Configures control gains and thresholds (`dist_threshold_stop`, `dist_threshold_turn`, `debounce_limit`).
+   * Executes the simulation model.
+   * Automatically generates and displays a dual-panel figure window showing the active robot state transitions and synchronized sensor distance telemetry over time.
+
+---
+
+## 🛠️ System Architecture Highlights
+
+* **Sensor Processing:** Dual-path conversion mapping voltages to calibrated distances and proximity threshold flags.
+* **Decision & Routing:** Switch-case dispatchers routing integer commands to specific action subsystems, merged cleanly for diagnostic output and human-readable string translation.
+* **Data Logging:** Configured with `Timeseries` logging format for precise time-synchronized workspace extraction.
+
+---
+
+## 📸 Sample Output
+
+*(Add a screenshot of the dual-panel state/telemetry figure here — this is the single best way to show what the project actually does at a glance.)*
+
+```markdown
+![Simulation Output](docs/sample_output.png)
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👤 Author
+
+**Mohamed Nabil Ali Abd Elaziz Soliman**
+Mechatronics and Robotics Engineering Program, Ain Shams University
+[GitHub: @M0h7amed](https://github.com/M0h7amed)
